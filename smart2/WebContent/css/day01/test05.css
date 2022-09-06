@@ -1,0 +1,59 @@
+#frm{
+	display: block;
+	margin: 0px auto;
+	width: 50%;
+}
+
+label, input {
+	/* display: block;
+	float: left; */
+	display: inline-block;
+}
+label {
+	width: 30%;
+	text-align: right;
+}
+input {
+	width: 50%;
+	text-align: left;
+	margin-left: 10px;
+}
+/* 인풋타입 텍스트에 줄수도 있다 */
+input[type="text"] {
+	background-color: lightcyan;
+}
+/* 마찬가지로 인풋 속성값 password를 줘서 구별해서 줄수 있다 */
+input[type="password"]{
+	background-color: oldlace;
+}
+
+div{
+	margin-bottom: 15px;
+}
+
+#bfr {
+	/* clear: left; */
+	text-align: center;
+	margin-top: 30px;
+}
+
+div{
+	padding: 10px;
+}
+
+button{
+	width: 200px;
+	height: 30px;
+	font-size: 16px;
+}
+
+button[type="button"] {
+	background-color: green;
+}
+
+button[type="submit"] {
+	background-color: orange;
+}
+
+
+
