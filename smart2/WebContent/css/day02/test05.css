@@ -1,0 +1,61 @@
+.content{
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+.title{
+	background-color: #cddc39;
+}
+.fr{
+	font-size: 0pt;
+}
+.box, .box1 {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border: 1px solid gray;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	font-size: 12pt;
+}
+/* 첫번째 */
+.box:first-child {
+	background-color: #ff5722;
+}
+/* 마지막 */
+.box:last-child {
+	background-color: #e91e63;
+}
+/* 짝수 */
+.box:nth-child(2n) {
+	width: 210px;
+}
+/* 홀수 */
+.box:nth-child(2n-1) {
+	width: 50px;
+}
+/* 3배의 배수 */
+.box:nth-child(3n) {
+	background-color: #ffc107;
+}
+
+.fr > :first-child {
+	/* 클래스가 fr인 태그의 첫쨰 자식태그를 선택 */
+	border: 5px dotted blue;
+}
+
+/* 
+	형제 태그중 4번째 태그들을 선택해서 
+	테두리를 대쉬(dashed) 타입으로 변경하세요.
+	해당 html은 body기준으로 4번째 선택함
+ */
+:nth-child(4) {
+	border: 5px dashed lime;
+}
+
+
+
+
