@@ -1,0 +1,24 @@
+.content{
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.d1 {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	padding: 50px; /* 내용과 border 사이의 간격을 표현한다  */
+	background-color: #cddc39;
+	border: 10px solid gray; /* div태두리 밖에 표현된다 */
+	/* border, padding는 사이즈에 포함않된다 */
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+/* 
+body * {
+	body 태그 하위의 모든 태그 선택
+}
+*/
+
+
+body > div {
+	width: 650px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.box {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+
+div:first-child {
+	/* 형제중에 첫째 선택 9, 10, 11, 19라인 선택됨 */
+	
+}
+
+div:first-child > .box {
+	/* 형제중에 첫째 자식중 첫번째 box클래스가 있는 div가 선택 */
+	background-color: #e91e63;
+	margin-bottom: 10px;
+}
+
+div:last-child > .box {
+	/* 형제중에 첫째 자식중 마지막 box클래스가 있는 div가 선택 */
+	background-color: #cddc39;
+}
+
+div:first-child > .box:nth-child(2n) {
+	/* 형제중에 첫째 자식중 첫번째 box중 짝수 박스만 선택 */
+	background-color: #e91e63;
+	border: 3px solid blue;
+}
+
+div:last-child > .box:nth-child(3n):hover {
+	/* 형제중에 첫째 자식중 마지막 box클래스중 3배수만 선택 */
+	border-radius: 50%;
+}
+
+
+
+
+
+
+
+
